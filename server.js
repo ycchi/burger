@@ -17,7 +17,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // turn on routes
-//require('./routes/htmlRoutes')(app);
+require('./routes/htmlRoutes')(app);
 require('./routes/apiRoutes')(app);
 
 // set up wildcard (404) route
